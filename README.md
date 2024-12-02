@@ -10,7 +10,7 @@ Develops a simple command line utility that calculates descriptive statistics.
 
 ## Concurrent Regression
 
-Fits a linear regression and performs calculating using concurrency.
+Fits a linear regression and performs calculating using concurrency.  Concurrent application was tested against idential calculation run sequentially.  Concurrent application reduced runtime by 75%.
 
 ## Imagine Pipeline
 
