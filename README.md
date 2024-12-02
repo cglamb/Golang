@@ -18,7 +18,7 @@ Performs basic imagine manipulation.  Repository modifies Amrit Singh’s origin
 
 ## Random Forest
 
-Fits a random forest model.
+Fits a random forest model.  Benchmarks performance and results against RF models fit in a R and Python environment.
 
 ## Regression Benchmarking
 
