@@ -1,0 +1,27 @@
+PS C:\Users\...\Wk6_Assignment\exhaustive_regression> go test -bench=BenchmarkC               
+---Running regresions concurrently---
+Number of models run: 819100
+Best Model Beta Coefficients: [crim zn nox rooms dis ptratio lstat chas rad tax]
+MSE: 22.035339
+AIC: 3022.845414
+goos: windows
+goarch: amd64
+pkg: exhaustive_regression
+cpu: 13th Gen Intel(R) Core(TM) i5-13400F
+BenchmarkC-16                  1        13377789900 ns/op
+PASS
+ok      exhaustive_regression   13.498s
+
+PS C:\Users\....\Wk6_Assignment\exhaustive_regression> go test -bench=BenchmarkS
+---Running regresions sequentially---
+Number of models run: 819100
+Best Model Beta Coefficients: [crim zn nox rooms dis ptratio lstat chas rad tax]
+MSE: 22.035339
+AIC: 3022.845414
+goos: windows
+goarch: amd64
+pkg: exhaustive_regression
+cpu: 13th Gen Intel(R) Core(TM) i5-13400F
+BenchmarkS-16                  1        53845052900 ns/op
+PASS
+ok      exhaustive_regression   53.988s

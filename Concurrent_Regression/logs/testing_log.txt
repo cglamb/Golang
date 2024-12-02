@@ -1,0 +1,17 @@
+PS C:\Users\...\exhaustive_regression> go test -v
+=== RUN   TestDependentSlicer
+--- PASS: TestDependentSlicer (0.00s)
+=== RUN   TestIndepdentSlicer
+[[65.2 4.09] [78.9 4.9671] [61.1 4.9671]]--- PASS: TestIndepdentSlicer (0.00s)
+=== RUN   TestMeanSquareError
+--- PASS: TestMeanSquareError (0.00s)
+=== RUN   TestLinearRegressionFit
+--- PASS: TestLinearRegressionFit (0.00s)
+=== RUN   TestExhaustiveList
+--- PASS: TestExhaustiveList (0.00s)
+=== RUN   TestFilteredExhaustiveList
+--- PASS: TestFilteredExhaustiveList (0.00s)
+=== RUN   TestPredict
+--- PASS: TestPredict (0.00s)
+PASS
+ok      exhaustive_regression   0.127s

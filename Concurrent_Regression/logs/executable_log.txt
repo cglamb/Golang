@@ -1,0 +1,14 @@
+PS C:\Users\...\Wk6_Assignment\exhaustive_regression> ./exhaustive_regression -i 10 -c=false
+---Running regresions sequentially---
+Number of models run: 81910
+Best Model Beta Coefficients: [crim zn nox rooms dis ptratio lstat chas rad tax]
+MSE: 22.035339
+AIC: 3022.845414
+
+
+PS C:\Users\...\exhaustive_regression> ./exhaustive_regression -i 10 -c=true 
+---Running regresions concurrently---
+Number of models run: 81910
+Best Model Beta Coefficients: [crim zn nox rooms dis ptratio lstat chas rad tax]
+MSE: 22.035339
+AIC: 3022.845414
