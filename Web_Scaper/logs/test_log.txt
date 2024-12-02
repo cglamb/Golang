@@ -1,0 +1,7 @@
+PS C:\Users\...\web-scraper-go> go test -v
+=== RUN   TestCleaner
+--- PASS: TestCleaner (0.00s)
+=== RUN   TestReadUrl
+--- PASS: TestReadUrl (0.01s)
+PASS
+ok      web-scraper     0.061s

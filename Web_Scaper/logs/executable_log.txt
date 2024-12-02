@@ -1,0 +1,2 @@
+PS C:\Users\...\web-scraper-go> ./web-scraper -input target_html.txt -output output.jl  
+JSON saved as: output.jl

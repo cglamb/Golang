@@ -1,0 +1,9 @@
+PS C:\Users\...\Final_Submission> go test -v
+=== RUN   TestConvertStringSliceToInterface_SpecificCase
+--- PASS: TestConvertStringSliceToInterface_SpecificCase (0.00s)
+=== RUN   TestConvertDFYToStringSlice
+--- PASS: TestConvertDFYToStringSlice (0.00s)
+=== RUN   TestCalcMetrics
+--- PASS: TestCalcMetrics (0.00s)
+PASS
+ok      RF_go   0.330s

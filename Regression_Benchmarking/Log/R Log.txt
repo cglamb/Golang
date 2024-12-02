@@ -1,0 +1,98 @@
+start.time <- Sys.time()
+> 
+> anscombe <- data.frame(
++   x1 = c(10, 8, 13, 9, 11, 14, 6, 4, 12, 7, 5),
++   x2 = c(10, 8, 13, 9, 11, 14, 6, 4, 12, 7, 5),
++   x3 = c(10, 8, 13, 9, 11, 14, 6, 4, 12, 7, 5),
++   x4 = c(8, 8, 8, 8, 8, 8, 8, 19, 8, 8, 8),
++   y1 = c(8.04, 6.95,  7.58, 8.81, 8.33, 9.96, 7.24, 4.26,10.84, 4.82, 5.68),
++   y2 = c(9.14, 8.14,  8.74, 8.77, 9.26, 8.1, 6.13, 3.1,  9.13, 7.26, 4.74),
++   y3 = c(7.46, 6.77, 12.74, 7.11, 7.81, 8.84, 6.08, 5.39, 8.15, 6.42, 5.73),
++   y4 = c(6.58, 5.76,  7.71, 8.84, 8.47, 7.04, 5.25, 12.5, 5.56, 7.91, 6.89))
+> 
+> # show results from four regression analyses
+> with(anscombe, print(summary(lm(y1 ~ x1, data = anscombe))))
+
+Call:
+lm(formula = y1 ~ x1, data = anscombe)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.92127 -0.45577 -0.04136  0.70941  1.83882 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   3.0001     1.1247   2.667  0.02573 * 
+x1            0.5001     0.1179   4.241  0.00217 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.237 on 9 degrees of freedom
+Multiple R-squared:  0.6665,	Adjusted R-squared:  0.6295 
+F-statistic: 17.99 on 1 and 9 DF,  p-value: 0.00217
+
+> with(anscombe, print(summary(lm(y2 ~ x2, data = anscombe))))
+
+Call:
+lm(formula = y2 ~ x2, data = anscombe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.9009 -0.7609  0.1291  0.9491  1.2691 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)    3.001      1.125   2.667  0.02576 * 
+x2             0.500      0.118   4.239  0.00218 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.237 on 9 degrees of freedom
+Multiple R-squared:  0.6662,	Adjusted R-squared:  0.6292 
+F-statistic: 17.97 on 1 and 9 DF,  p-value: 0.002179
+
+> with(anscombe, print(summary(lm(y3 ~ x3, data = anscombe))))
+
+Call:
+lm(formula = y3 ~ x3, data = anscombe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.1586 -0.6146 -0.2303  0.1540  3.2411 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   3.0025     1.1245   2.670  0.02562 * 
+x3            0.4997     0.1179   4.239  0.00218 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.236 on 9 degrees of freedom
+Multiple R-squared:  0.6663,	Adjusted R-squared:  0.6292 
+F-statistic: 17.97 on 1 and 9 DF,  p-value: 0.002176
+
+> with(anscombe, print(summary(lm(y4 ~ x4, data = anscombe))))
+
+Call:
+lm(formula = y4 ~ x4, data = anscombe)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-1.751 -0.831  0.000  0.809  1.839 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   3.0017     1.1239   2.671  0.02559 * 
+x4            0.4999     0.1178   4.243  0.00216 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.236 on 9 degrees of freedom
+Multiple R-squared:  0.6667,	Adjusted R-squared:  0.6297 
+F-statistic:    18 on 1 and 9 DF,  p-value: 0.002165
+
+> 
+> end.time <- Sys.time()
+> time.taken <- end.time - start.time
+> time.taken
+Time difference of 0.01900005 secs
