@@ -14,7 +14,7 @@ Fits a linear regression and performs calculating using concurrency.  Concurrent
 
 ## Imagine Pipeline
 
-Performs basic imagine manipulation.
+Performs basic imagine manipulation.  Repository modifies Amrit Singh’s original repository to add imagine rotation.  This functionality was developed for use in computer vision training.  
 
 ## Random Forest
 
