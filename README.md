@@ -6,7 +6,7 @@ Charles Lamb
 
 ## Command Line Application
 
-Develops a simple command line utility.
+Develops a simple command line utility that calculates descriptive statistics.
 
 ## Concurrent Regression
 
